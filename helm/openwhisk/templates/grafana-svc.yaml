@@ -23,6 +23,7 @@ metadata:
   labels:
     name: {{ .Release.Name }}-grafana
 spec:
+  type: NodePort
   selector:
     name: {{ .Release.Name }}-grafana
   ports:

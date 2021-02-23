@@ -70,7 +70,7 @@ whisk:
     guest: "23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP"
   systemNameSpace: "/whisk.system"
   limits:
-    actionsInvokesPerminute: 60
+    actionsInvokesPerminute: 666
     actionsInvokesConcurrent: 30
     triggersFiresPerminute: 60
     actionsSequenceMaxlength: 50
@@ -81,11 +81,11 @@ whisk:
         std: "1m"
       memory:
         min: "128m"
-        max: "512m"
+        max: "1024m"
         std: "256m"
       concurrency:
         min: 1
-        max: 1
+        max: 4
         std: 1
       log:
         min: "0m"
@@ -97,6 +97,7 @@ whisk:
   loadbalancer:
     blackboxFraction: "10%"
     timeoutFactor: 2
+    
   # Kafka configuration. For all sub-fields a value of "" means use the default from application.conf
   kafka:
     replicationFactor: ""
@@ -345,9 +346,9 @@ grafana:
   port: 3000
   adminPassword: "admin"
   dashboards:
-  - https://raw.githubusercontent.com/apache/openwhisk/master/core/monitoring/user-events/compose/grafana/dashboards/openwhisk_events.json
-  - https://raw.githubusercontent.com/apache/openwhisk/master/core/monitoring/user-events/compose/grafana/dashboards/global-metrics.json
-  - https://raw.githubusercontent.com/apache/openwhisk/master/core/monitoring/user-events/compose/grafana/dashboards/top-namespaces.json
+  - http://59.110.115.67/openwhisk_events.json
+  - http://59.110.115.67/global-metrics.json
+  - http://59.110.115.67/top-namespaces.json
 
 # Metrics
 metrics:
