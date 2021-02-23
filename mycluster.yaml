@@ -1,0 +1,17 @@
+whisk:
+  ingress:
+    type: NodePort
+    apiHostName: 172.20.110.51
+    apiHostPort: 31001
+k8s:
+  persistence:
+    enabled: false
+nginx:
+  httpsNodePort: 31001
+invoker:
+  containerFactory:
+    impl: "kubernetes"
+metrics:
+  prometheusEnabled: true
+metrics:
+  userMetricsEnabled: true
