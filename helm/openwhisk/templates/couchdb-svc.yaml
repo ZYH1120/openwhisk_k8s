@@ -24,6 +24,7 @@ metadata:
     name: {{ .Release.Name }}-couchdb
 {{ include "openwhisk.label_boilerplate" . | indent 4 }}
 spec:
+  type: NodePort
   selector:
     name: {{ .Release.Name }}-couchdb
   ports:
