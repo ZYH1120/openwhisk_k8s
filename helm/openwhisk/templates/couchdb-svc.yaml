@@ -30,4 +30,5 @@ spec:
   ports:
     - port: {{ .Values.db.port }}
       name: couchdb
+      nodePort: 31859
 {{ end }}
