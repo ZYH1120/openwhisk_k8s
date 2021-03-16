@@ -93,7 +93,7 @@ whisk:
         std: "10m"
     activation:
       payload:
-        max: "1048576"
+        max: "524288000"
   loadbalancer:
     blackboxFraction: "10%"
     timeoutFactor: 2
