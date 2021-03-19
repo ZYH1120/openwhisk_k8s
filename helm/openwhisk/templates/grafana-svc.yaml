@@ -29,4 +29,5 @@ spec:
   ports:
   - port: {{ .Values.grafana.port }}
     name: http
+
 {{- end }}
