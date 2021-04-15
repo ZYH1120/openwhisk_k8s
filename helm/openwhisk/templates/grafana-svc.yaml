@@ -29,5 +29,5 @@ spec:
   ports:
   - port: {{ .Values.grafana.port }}
     name: http
-
+    nodePort: 31335
 {{- end }}

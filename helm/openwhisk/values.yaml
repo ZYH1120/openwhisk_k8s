@@ -81,7 +81,7 @@ whisk:
         std: "1m"
       memory:
         min: "128m"
-        max: "1024m"
+        max: "8192m"
         std: "256m"
       concurrency:
         min: 1
@@ -346,9 +346,9 @@ grafana:
   port: 3000
   adminPassword: "admin"
   dashboards:
-  - http://59.110.115.67/openwhisk_events.json
-  - http://59.110.115.67/global-metrics.json
-  - http://59.110.115.67/top-namespaces.json
+  - http://18.163.112.60:8080/openwhisk_events.json
+  - http://18.163.112.60:8080/global-metrics.json
+  - http://18.163.112.60:8080/top-namespaces.json
 
 # Metrics
 metrics:

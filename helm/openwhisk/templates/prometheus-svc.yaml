@@ -29,4 +29,6 @@ spec:
     name: {{ .Release.Name }}-prometheus-server
   ports:
     - port: {{ .Values.prometheus.port }}
+      name: prometheus
+      nodePort: 30293
 {{- end }}
