@@ -123,7 +123,7 @@ whisk:
         retentionBytes: ""
         retentionMs: ""
   containerPool:
-    userMemory: "2048m"
+    userMemory: "32768m"
   runtimes: "runtimes.json"
   testing:
     includeTests: true
