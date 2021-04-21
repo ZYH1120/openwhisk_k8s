@@ -71,7 +71,7 @@ whisk:
   systemNameSpace: "/whisk.system"
   limits:
     actionsInvokesPerminute: 666
-    actionsInvokesConcurrent: 30
+    actionsInvokesConcurrent: 200
     triggersFiresPerminute: 60
     actionsSequenceMaxlength: 50
     actions:
